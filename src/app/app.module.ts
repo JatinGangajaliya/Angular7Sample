@@ -5,22 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RetroBoardComponent } from './retro-board/retro-board.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule } from '@angular/material';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RetroBoardComponent,
-    DashboardComponent
+    DashboardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule, MatCheckboxModule
+    AppRoutingModule
   ],
-  exports: [MatButtonModule, MatCheckboxModule],
   providers: [],
   bootstrap: [AppComponent]
 })
