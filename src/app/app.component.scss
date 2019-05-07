@@ -1,0 +1,35 @@
+@mixin textarea {
+    border: 0px;
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    height: 120px;
+    resize: none;
+}
+
+textarea {
+    @include textarea;
+}
+
+@media (min-width: 544px) {
+    h2 { font-size: 0.8rem;}  
+    .card {font-size:0.5rem;} /*1rem = 16px*/
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    h2 { font-size: 1rem;}
+    .card {font-size: 0.7rem;} /*1rem = 16px*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    h2 { font-size: 1.5rem;}
+    .card {font-size:0.8rem;} /*1rem = 16px*/
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    h2 { font-size: 2rem;}
+    .card {font-size:1rem;} /*1rem = 16px*/
+}
